@@ -5,4 +5,4 @@ Simple PowerShell script to disable advertisements in Windows 11.
 - PowerShell 7 or later.
 
 ## Usage
-- Run the `disable-windows-ads.ps1` script found under `scripts/`.
+- Download and run the `disable-windows-ads.ps1` script found under `scripts/`.
