@@ -1,3 +1,7 @@
+# Applies verbose output to the following functions to show the user what is happening.
+$PSDefaultParameterValues['New-Item:Verbose'] = $true
+$PSDefaultParameterValues['Set-ItemProperty:Verbose'] = $true
+
 # Function to create registry keys if they don't exist
 function Create-RegistryKeyIfNotExists {
     param (
