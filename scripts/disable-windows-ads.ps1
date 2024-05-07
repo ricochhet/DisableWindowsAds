@@ -66,5 +66,7 @@ Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Windows
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot" -Name "TurnOffWindowsCopilot" -Value 1
 
 # Edge hubs sidebar
+## Note: This key is considered a policy and Edge will say it is managed by an organization.
+## View more: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Edge"
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0
