@@ -60,3 +60,11 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer" -Nam
 # Windows start menu Bing search
 Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search"
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Value 0
+
+# Windows copilot
+Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot" -Name "TurnOffWindowsCopilot" -Value 1
+
+# Edge hubs sidebar
+Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Edge"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0
