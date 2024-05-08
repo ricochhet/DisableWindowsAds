@@ -12,6 +12,7 @@ Simple PowerShell script to disable advertisements in Windows 11.
 - Disables "finish setup" ads.
 - Disables Bing search on start menu.
 - Disables "tailored experience" ads.
+- Disables Edge desktop search widget.
 - Disables ads in search box suggestions.
 
 ## Requirements

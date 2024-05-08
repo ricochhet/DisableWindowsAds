@@ -70,3 +70,7 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot
 ## View more: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Edge"
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0
+
+# Edge desktop desarch widget
+Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Edge"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "WebWidgetAllowed" -Value 0
