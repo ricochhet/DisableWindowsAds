@@ -65,6 +65,10 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" 
 Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot"
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot" -Name "TurnOffWindowsCopilot" -Value 1
 
+# Notification suggestions
+Create-RegistryKeyIfNotExists "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.ActionCenter.SmartOptOut"
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.ActionCenter.SmartOptOut" -Name "Enabled" -Value 0
+
 # Edge hubs sidebar
 ## Note: This key is considered a policy and Edge will say it is managed by an organization.
 ## View more: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
